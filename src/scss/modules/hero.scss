@@ -1,0 +1,43 @@
+.hero {
+    max-width: 781px;
+    max-height: 545px;
+    padding: 128px 0;
+  
+    &__img {
+      max-width: 100.21px;
+      max-height: 100.21px;
+      border-radius: 50%;
+    }
+}
+  
+  
+  .about-me {
+    &__name {
+      max-width: 781px;
+      max-height: 168px;
+      left: 128px;
+      top: 280px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.5 rem;
+      line-height: 56px;
+    }
+
+    &__info {
+        max-width: 681px;
+        max-height: 108px;
+        left: 128px;
+        top: 464px;
+        font-weight: 300;
+        font-size: 1.25 rem;
+        line-height: 36px;
+      }
+    
+      &__email {
+        max-width: 261px;
+        max-height: 42px;
+        left: 128px;
+        top: 632px;
+      }
+    }
