@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -307,16 +308,50 @@ template {
 [hidden] {
   display: none; }
 
+.hero {
+  max-width: 781px;
+  padding: 7rem 7rem; }
+  .hero__img {
+    max-width: 100.21px;
+    max-height: 100.21px;
+    border-radius: 50%; }
+
+.about-me__name {
+  padding: 2rem 0 1rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.5rem; }
+
+.about-me__info {
+  font-weight: 300;
+  font-size: 1.25rem; }
+
+.about-me__email {
+  padding-top: 3.75rem;
+  font-size: 1.25rem; }
+
+.about-me__link {
+  color: #0593FB; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  border: 6px solid #171F3F;
+  color: #171F3F; }
+
+.main {
+  max-width: 1440px;
+  background-color: #fff;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

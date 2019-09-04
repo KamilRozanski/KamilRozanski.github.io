@@ -1,40 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My Portfolio</title>
+  <meta name="description" content="My Portfolio Kamil Rozanski" />
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript Front End Developer Jobs computers IT website first job in IT">
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="My Portfolio Kamil Rozanski" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="Kamil Rozanski Junior Front End Delevoper my skills  " />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="https://kamilrozanski.github.io" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image"
+    content="https://github.com/KamilRozanski/KamilRozanski.github.io/blob/source/src/assets/img/cover.jpg?raw=true" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="shortcut icon" type="image/png" href="assets/img/icon.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>KamilRoanski.github.io</h1>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <script src="js/main.js"></script>
-  </body>
+<body>
+
+  <main class="main">
+    <!-- section ABOUT ME -->
+    <header class="hero">
+      <div class="hero__foto">
+        <img src="assets/img/about-me.jpg" class="hero__img" alt="my profile photo">
+      </div>
+      <section class="about-me">
+        <h1 class="about-me__name">Hey!👋 My name is Kamil and I'm an aspiring Frondend developer.</h1>
+        <p class="about-me__info">You might be interested in checking the list of <a class="about-me__link" href="#my-skills">my skills</a>.
+        </p>
+        <p class="about-me__info">Don't forget to have a glimpse at <a class="about-me__link" href="#my-projects">my projects</a>.
+        </p>
+        <p class="about-me__info" >Currently I'm locking for a new challenges, so if you have one - <a class="about-me__link" href="#contact-me">contant
+            me</a>🤩
+        </p>
+        <p class="about-me__email"><a class="about-me__link" href="mailto:motomc1@gmail.com">motomc1@gmail.com</a>
+        </p>
+      </section>
+    </header>
+    <!-- section my skills and knowledge -->
+    <section class="my-skills">
+      <h2 class="my-skills__title">My skills</h2>
+
+      <section id="my-skills" class="skills">
+        <h2 class="skills-list__title">Working knowledge</h2>
+        <ul class="skills-list__list">
+          <li class="skills-list__item">Semantic HTML5</li>
+          <li class="skills-list__item">Flexbox</li>
+          <li class="skills-list__item">Markdown</li>
+          <li class="skills-list__item">JS:Lockal storage</li>
+          <li class="skills-list__item">Figma</li>
+          <li class="skills-list__item">CSS grid</li>
+          <li class="skills-list__item">Forms</li>
+          <li class="skills-list__item">JS: DOM manipulations</li>
+          <li class="skills-list__item">Sass</li>
+        </ul>
+      </section>
+
+
+      <section class="know-something">
+        <h2 class="know-something__title">Know something about</h2>
+        <ul class="know-something__list">
+          <li class="know-something__item">JavaScript ES6 + features </li>
+          <li class="know-something__item">CSS animations</li>
+          <li class="know-something__item">Working with API</li>
+          <li class="know-something__item">NPM Scripts</li>
+          <li class="know-something__item">Progressive web app</li>
+          <li class="know-something__item">GIT</li>
+          <li class="know-something__item">Accessibility</li>
+          <li class="know-something__item">Bootstrap 4</li>
+        </ul>
+      </section>
+
+      <section class="to-learn">
+        <h2 class="to-learn__title">Want to learn</h2>
+        <ul class="to-learn__list">
+          <li class="to-learn__item">React JS </li>
+          <li class="to-learn__item">NODE.JS</li>
+          <li class="to-learn__item">Electron</li>
+          <li class="to-learn__item">Server side rendering</li>
+          <li class="to-learn__item">Typescript</li>
+          <li class="to-learn__item">Gatsby</li>
+          <li class="to-learn__item">Vue.JS</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="my-projects" class="projects">
+      <h2 class="project__title">Recent projects</h2>
+      <p class="project__description">I started my frondend developer path in 2019. Since then, I've built some
+        projects. Here is the list of things I've done so far.
+      </p>
+
+      <section class="project">
+        <img src="assets/img/Github-Icon.png" alt="github-logo">
+        <h4 class="project__title">Project name</h4>
+        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nemo nisi, illum
+          quidem consectetur et. Itaque ratione totam, voluptas, hic dicta nihil magni qui porro veritatis asperiores
+          maxime cum nisi.</p>
+        <div class="project__footer"><a href="#">
+          <img src="assets/img/Demo-Icon.png" alt="demo-icon"></a>
+          <p class="project__demo">Demo</p>
+          <a href="#">
+              <img src="assets/img/Code-Icon.png" alt="code-icon"></a>
+          <p class="project__demo">Github</p>
+        </div>
+      </section>
+    </section>
+
+    <footer id="contact-me" class="contact">
+      <h2 class="contact__title">Contact me</h2>
+      <p class="contact__description">I'm open for new opportunities. If you have one for me we should talk!</p>
+      <ul class="social__list">
+        <li class="social__item"><a href="#"><img src="assets/img/FB-Icon.png"></a></li>
+        <li class="social__item"><a href="#"><img src="assets/img/Vector.png"></a></li>
+      </ul>
+      <p class="contact__email: "><a href="mailto:motomc1@gmail.com">motomc1@gmail.com</a></p>
+    </footer>
+
+ -->
+
+
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
