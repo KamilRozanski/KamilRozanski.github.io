@@ -1,6 +1,7 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap');
+
 @import "modules/hero.scss";
 
 
@@ -17,43 +18,12 @@ html {
 body {
   font-family: Poppins, sans-serif;
   font-size: 16px;
-  
-
+  border: 6px solid $big-stone;
+  color: $big-stone;
 }
 
 .main {
   max-width: 1440px;
-  max-height: 3814px;
   background-color: $white;
   margin: 0 auto;
-  border: 6px solid $Big-stone;
-  color: $Big-stone;
-}
-
-
-
-  
-
-
-.my-skills {
-  max-width: 1187px;
-  max-height: 1094px;
-  left: 128px;
-  top: 874px;
-
-  &__title {
-    font-weight: 600;
-    font-size: 2.25rem;
-    line-height: 3rem;
-    display: flex;
-    align-items: center;
-  }
-}
-
-.skills {
-max-width: 1184px;
-max-height: 228px;
-left: 128px;
-top: 1068px;
-  
 }
