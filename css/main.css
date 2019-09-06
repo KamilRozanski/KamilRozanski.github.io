@@ -309,7 +309,8 @@ template {
   display: none; }
 
 .hero {
-  max-width: 781px; }
+  max-width: 781px;
+  margin: 0 auto; }
   .hero__foto {
     max-width: 120px;
     max-height: 120px; }
@@ -344,6 +345,73 @@ template {
   border-bottom: 2px solid #0593FB;
   text-decoration: none;
   padding-bottom: 8px; }
+
+.my-skills {
+  max-width: 1187px;
+  margin: 0 auto;
+  margin-top: 12.5rem; }
+
+.my-skills__title {
+  font-size: 2.25rem;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 1rem; }
+
+.skills-list {
+  margin-top: 9.75rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; }
+  @media (max-width: 640px) {
+    .skills-list {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+  .skills-list__title {
+    font-size: 2rem; }
+  .skills-list__title::before {
+    content: "";
+    display: block;
+    margin-bottom: 1.5rem;
+    max-width: 80px;
+    height: 4px;
+    border-radius: 0.5rem;
+    border-top: 2px solid #06C847; }
+
+.skills-list__list,
+.know-something__list,
+.to-learn__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  list-style-type: none;
+  position: relative;
+  min-height: 40px;
+  margin-top: 60px;
+  margin: 1rem; }
+  @media (max-width: 640px) {
+    .skills-list__list,
+    .know-something__list,
+    .to-learn__list {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+
+.skills-list__item,
+.know-something__item,
+.to-learn__item {
+  min-height: 40px; }
+
+.skills-list__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../assets/img/green.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  left: 10px; }
 
 html {
   -webkit-box-sizing: border-box;
