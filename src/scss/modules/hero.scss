@@ -21,6 +21,7 @@
     }
 
     &__info {
+      color: $shuttle-gray;
         font-weight: 300;
         font-size: 1.25rem;
         @media (max-width: 375px) {

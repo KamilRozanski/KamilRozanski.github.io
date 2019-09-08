@@ -5,6 +5,7 @@
 
 @import "modules/hero.scss";
 @import "modules/skills.scss";
+@import "modules/projects.scss";
 
 
 html {
@@ -25,8 +26,13 @@ body {
 }
 
 .main {
-  max-width: 1440px;
+  
   background-color: $white;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1444px;
   margin: 0 auto;
   padding: 7rem 1rem;
 }

@@ -1,0 +1,21 @@
+
+
+.my-projects {
+    background-color:$catskill-white;
+    width: 100%;
+    padding: 8rem;
+}
+
+
+.project-header {
+    max-width: 580px;
+    &__title {
+        font-size: 2.25rem;
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 1.75rem;
+        line-height: 36px;
+        color: $shuttle-gray;
+    }
+}
