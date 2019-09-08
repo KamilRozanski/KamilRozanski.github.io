@@ -325,6 +325,7 @@ template {
       font-size: 1.85rem; } }
 
 .about-me__info {
+  color: #52606D;
   font-weight: 300;
   font-size: 1.25rem; }
   @media (max-width: 375px) {
@@ -349,26 +350,34 @@ template {
 .my-skills {
   max-width: 1187px;
   margin: 0 auto;
-  margin-top: 12.5rem; }
+  margin: 12.5rem 0; }
 
 .my-skills__title {
   font-size: 2.25rem;
   border-bottom: 2px solid lightgray;
   padding-bottom: 1rem; }
 
-.skills-list, .know-something, .to-learn {
+.skills-list,
+.know-something,
+.to-learn {
   margin-top: 9.75rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr; }
   @media (max-width: 640px) {
-    .skills-list, .know-something, .to-learn {
+    .skills-list,
+    .know-something,
+    .to-learn {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr; } }
-  .skills-list__title, .know-something__title, .to-learn__title {
+  .skills-list__title,
+  .know-something__title,
+  .to-learn__title {
     font-size: 2rem; }
-  .skills-list__title::before, .know-something__title::before, .to-learn__title::before {
+  .skills-list__title::before,
+  .know-something__title::before,
+  .to-learn__title::before {
     content: "";
     display: block;
     margin-bottom: 1.5rem;
@@ -376,6 +385,12 @@ template {
     height: 4px;
     border-radius: 0.5rem;
     border-top: 2px solid #06C847; }
+
+.know-something__title::before {
+  border-top: 2px solid #653CAD; }
+
+.to-learn__title::before {
+  border-top: 2px solid #2251CC; }
 
 .skills-list__list,
 .know-something__list,
@@ -401,37 +416,56 @@ template {
 .skills-list__item,
 .know-something__item,
 .to-learn__item {
-  min-height: 50px; }
+  min-height: 50px;
+  position: relative;
+  top: 50px;
+  left: 0;
+  color: #52606D; }
 
 .skills-list__item::before {
   content: "";
   display: block;
-  position: relative;
+  position: absolute;
   background: url("../assets/img/green.svg") no-repeat;
   width: 20px;
   height: 20px;
-  left: -25px;
-  top: 20px; }
+  left: -30px;
+  top: 0px; }
 
 .know-something__item::before {
   content: "";
   display: block;
-  position: relative;
+  position: absolute;
   background: url("../assets/img/Vector-purple.jpg") no-repeat;
   width: 20px;
   height: 20px;
-  left: -25px;
-  top: 20px; }
+  left: -30px;
+  top: 0px; }
 
 .to-learn__item::before {
   content: "";
   display: block;
-  position: relative;
+  position: absolute;
   background: url("../assets/img/Vector-blue.svg") no-repeat;
   width: 20px;
   height: 20px;
-  left: -25px;
-  top: 20px; }
+  left: -30px;
+  top: 0px; }
+
+.my-projects {
+  background-color: #F5F7FA;
+  width: 100%;
+  padding: 8rem; }
+
+.project-header {
+  max-width: 580px; }
+  .project-header__title {
+    font-size: 2.25rem; }
+  .project-header__description {
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 36px;
+    color: #52606D; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -450,8 +484,11 @@ body {
   color: #171F3F; }
 
 .main {
-  max-width: 1440px;
   background-color: #fff;
+  margin: 0 auto; }
+
+.wrapper {
+  max-width: 1444px;
   margin: 0 auto;
   padding: 7rem 1rem; }
 
