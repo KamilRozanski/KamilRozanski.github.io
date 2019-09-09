@@ -1,13 +1,12 @@
 .my-projects {
     background-color: $catskill-white;
     width: 100%;
-    padding: 8rem;
 }
 
 
 .projects-header {
     max-width: 580px;
-
+    padding: 16px;
     &__title {
         font-weight: 600;
         font-size: 36px;
@@ -30,7 +29,6 @@
 
 .project__list {
     min-width: 580px;
-    min-height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
@@ -43,12 +41,9 @@
     @media (max-width: 640px) {
         grid-template-columns: 1fr;
         margin: 0;
-        padding: 0;
+        padding: 16px;;
+        min-width: 0px;
     }
-}
-.project-item {
-    box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-border-radius: 8px;
 }
 .project-list-wraper {
     background-color: $white;
