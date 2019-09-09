@@ -351,11 +351,11 @@ template {
   max-width: 1187px;
   margin: 0 auto;
   margin: 12.5rem 0; }
-
-.my-skills__title {
-  font-size: 2.25rem;
-  border-bottom: 2px solid lightgray;
-  padding-bottom: 1rem; }
+  .my-skills__title {
+    font-size: 2.25rem;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 1rem;
+    font-weight: 600; }
 
 .skills-list,
 .know-something,
@@ -383,14 +383,14 @@ template {
     margin-bottom: 1.5rem;
     max-width: 80px;
     height: 4px;
-    border-radius: 0.5rem;
-    border-top: 2px solid #06C847; }
+    background-color: #06C847;
+    border-radius: 0.5rem; }
 
 .know-something__title::before {
-  border-top: 2px solid #653CAD; }
+  background-color: #653CAD; }
 
 .to-learn__title::before {
-  border-top: 2px solid #2251CC; }
+  background-color: #2251CC; }
 
 .skills-list__list,
 .know-something__list,
@@ -403,8 +403,9 @@ template {
      -moz-column-gap: 1.5rem;
           column-gap: 1.5rem;
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
   min-height: 40px;
-  margin-top: 60px;
   margin: 1rem; }
   @media (max-width: 640px) {
     .skills-list__list,
@@ -419,57 +420,85 @@ template {
   min-height: 50px;
   position: relative;
   top: 50px;
-  left: 0;
+  left: 20px;
   color: #52606D; }
 
-.skills-list__item::before {
+.skills-list__item::before, .know-something__item::before, .to-learn__item::before {
   content: "";
   display: block;
   position: absolute;
   background: url("../assets/img/green.svg") no-repeat;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   left: -30px;
-  top: 0px; }
+  top: 5px; }
 
 .know-something__item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: url("../assets/img/Vector-purple.jpg") no-repeat;
-  width: 20px;
-  height: 20px;
-  left: -30px;
-  top: 0px; }
+  background: url("../assets/img/Vector-purple.jpg") no-repeat; }
 
 .to-learn__item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: url("../assets/img/Vector-blue.svg") no-repeat;
-  width: 20px;
-  height: 20px;
-  left: -30px;
-  top: 0px; }
+  background: url("../assets/img/Vector-blue.svg") no-repeat; }
 
 .my-projects {
   background-color: #F5F7FA;
   width: 100%;
   padding: 8rem; }
 
-.project-header {
+.projects-header {
   max-width: 580px; }
-  .project-header__title {
-    font-size: 2.25rem; }
-  .project-header__description {
+  .projects-header__title {
+    font-weight: 600;
+    font-size: 36px; }
+  .projects-header__description {
     font-weight: 300;
-    font-size: 1.75rem;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 2.25rem;
     color: #52606D; }
+
+.projects-list-wrapper {
+  max-width: 1184px;
+  margin: 0 auto;
+  margin-top: 4rem; }
+
+.project__list {
+  min-width: 580px;
+  min-height: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 24px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0; }
+  @media (max-width: 640px) {
+    .project__list {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      margin: 0;
+      padding: 0; } }
+
+.project-item {
+  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+  border-radius: 8px; }
+
+.project-list-wraper {
+  background-color: #fff;
+  padding: 48px; }
+
+.project-footer {
+  background-color: #F5F7FA;
+  min-height: 64px; }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px; }
 
 *,
 *:before,
@@ -479,9 +508,7 @@ html {
 
 body {
   font-family: Poppins, sans-serif;
-  font-size: 16px;
-  border: 6px solid #171F3F;
-  color: #171F3F; }
+  border: 6px solid #171F3F; }
 
 .main {
   background-color: #fff;
@@ -490,6 +517,6 @@ body {
 .wrapper {
   max-width: 1444px;
   margin: 0 auto;
-  padding: 7rem 1rem; }
+  padding: 7rem 1rem 0rem; }
 
 /*# sourceMappingURL=main.css.map */
