@@ -441,11 +441,11 @@ template {
 
 .my-projects {
   background-color: #F5F7FA;
-  width: 100%;
-  padding: 8rem; }
+  width: 100%; }
 
 .projects-header {
-  max-width: 580px; }
+  max-width: 580px;
+  padding: 16px; }
   .projects-header__title {
     font-weight: 600;
     font-size: 36px; }
@@ -462,7 +462,6 @@ template {
 
 .project__list {
   min-width: 580px;
-  min-height: 300px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -479,12 +478,8 @@ template {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       margin: 0;
-      padding: 0; } }
-
-.project-item {
-  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-  border-radius: 8px; }
+      padding: 16px;
+      min-width: 0px; } }
 
 .project-list-wraper {
   background-color: #fff;
