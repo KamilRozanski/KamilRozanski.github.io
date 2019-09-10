@@ -1,12 +1,17 @@
 .my-projects {
     background-color: $catskill-white;
-    width: 100%;
+    padding: 0 8rem;
+    @media (max-width: 640px) {
+        padding: 16px;
+    }
 }
 
 
 .projects-header {
     max-width: 580px;
-    padding: 16px;
+    padding-top: 8.73rem;
+    padding-bottom: 4rem;
+
     &__title {
         font-weight: 600;
         font-size: 36px;
@@ -23,12 +28,11 @@
 
 .projects-list-wrapper {
     max-width: 1184px;
-    margin: 0 auto;
-    margin-top: 4rem;
+    padding-bottom: 8rem;
+
 }
 
-.project__list {
-    min-width: 580px;
+.project-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
@@ -37,20 +41,82 @@
     margin: 0 auto;
     padding-left: 0;
 
+    &__title {
+        color: $big-stone;
+        font-size: 1.25rem;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 1.12rem;
+        line-height: 2rem;
+    }
+
+    &__item {
+        background: $white;
+        box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+        border-radius: 0.5rem;
+    }
 
     @media (max-width: 640px) {
         grid-template-columns: 1fr;
         margin: 0;
-        padding: 16px;;
-        min-width: 0px;
     }
 }
-.project-list-wraper {
-    background-color: $white;
-    padding: 48px;
+
+.project-list-wrapper {
+    padding: 3rem;
 }
 
+
+
 .project-footer {
-    background-color: $catskill-white;
-    min-height: 64px;
+    background: $catskill-white;
+    max-height: 64px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 3rem 1rem 0;
+    box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+    border-radius: 0.5rem;
+
+    &__span {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 1.12rem;
+        line-height: 2rem;
+        font-weight: 500;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+            background: url(../assets/img/Demo-Icon.svg) center center no-repeat;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+        }
+
+        &--code::before {
+            content: "";
+            display: inline-block;
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+            background: url(../assets/img/Code-Icon.svg) center center no-repeat;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+
+    }
+}
+
+.project-footer-wrapper {
+    max-width: 230px;
+    max-height: 2rem;
 }

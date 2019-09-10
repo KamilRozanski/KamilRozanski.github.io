@@ -2,6 +2,7 @@
     max-width: 1187px;
     margin: 0 auto;
     margin: 12.5rem 0;
+    padding-left: 8rem;
     &__title {
         font-size: 2.25rem;
         border-bottom: 2px solid lightgray;
@@ -81,7 +82,7 @@
     width: 18px;
     height: 18px;
     left: -30px;
-    top: 5px;
+    top: 0px;
 }
 
 .know-something__item::before {
