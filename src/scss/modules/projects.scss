@@ -12,6 +12,13 @@
     padding-top: 8.73rem;
     padding-bottom: 4rem;
 
+    @media (max-width: 640px) {
+        padding-top: 5rem;
+        text-align: center;
+        font-size: 1,5rem;
+    }
+
+
     &__title {
         font-weight: 600;
         font-size: 36px;
@@ -22,6 +29,9 @@
         font-size: 20px;
         line-height: 2.25rem;
         color: $shuttle-gray;
+        @media (max-width: 640px) {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -29,7 +39,6 @@
 .projects-list-wrapper {
     max-width: 1184px;
     padding-bottom: 8rem;
-
 }
 
 .project-list {
@@ -53,9 +62,11 @@
     }
 
     &__item {
+        max-width: 580px;
         background: $white;
         box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
         border-radius: 0.5rem;
+        overflow: hidden;
     }
 
     @media (max-width: 640px) {
@@ -76,9 +87,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 1rem 3rem 1rem 0;
-    box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-    border-radius: 0.5rem;
-
+    
     &__span {
         text-decoration: none;
         color: $text-color;
@@ -93,11 +102,9 @@
             width: 24px;
             height: 24px;
             background: url(../assets/img/Demo-Icon.svg) center center no-repeat;
-        }
-
-        &::after {
-            content: "";
-            display: inline-block;
+            position: relative;
+            top: 5px;
+            left:0;
         }
 
         &--code::before {
@@ -109,14 +116,22 @@
             background: url(../assets/img/Code-Icon.svg) center center no-repeat;
         }
     }
-
     &__link {
         text-decoration: none;
-
+        margin-left: 50px;
+        position: relative;
+        & + & {
+            &::after {
+            content: "";
+            display:block;
+            position: absolute;
+            top: -5px;
+            left: -24px;
+            width: 2px;
+            height: 32px;
+            background: lightgray;
+            }
+        }
     }
 }
 
-.project-footer-wrapper {
-    max-width: 230px;
-    max-height: 2rem;
-}
