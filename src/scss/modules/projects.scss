@@ -1,9 +1,11 @@
 .my-projects {
     background-color: $catskill-white;
     padding: 0 8rem;
-    @media (max-width: 640px) {
+
+    @media (max-width: 768px) {
         padding: 16px;
     }
+
 }
 
 
@@ -15,7 +17,7 @@
     @media (max-width: 640px) {
         padding-top: 5rem;
         text-align: center;
-        font-size: 1,5rem;
+        font-size: 1, 5rem;
     }
 
 
@@ -24,13 +26,22 @@
         font-size: 36px;
     }
 
+    @media (max-width: 1024px) {
+        font-size: 1.5rem;
+    }
+
     &__description {
         font-weight: 300;
         font-size: 20px;
         line-height: 2.25rem;
         color: $shuttle-gray;
+
         @media (max-width: 640px) {
             font-size: 1rem;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 1.5rem;
         }
     }
 }
@@ -49,6 +60,13 @@
     list-style-type: none;
     margin: 0 auto;
     padding-left: 0;
+
+    @media (min-width: 667px) and (orientation: landscape) {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+
 
     &__title {
         color: $big-stone;
@@ -77,6 +95,11 @@
 
 .project-list-wrapper {
     padding: 3rem;
+
+    @media (max-width: 640px) {
+        padding: 1rem;
+        text-align: center;
+    }
 }
 
 
@@ -87,13 +110,22 @@
     display: flex;
     justify-content: flex-end;
     padding: 1rem 3rem 1rem 0;
-    
+
+    @media (max-width: 320px) {
+        padding: 8px 0;
+    }
+
     &__span {
         text-decoration: none;
         color: $text-color;
         font-size: 1.12rem;
         line-height: 2rem;
         font-weight: 500;
+
+        @media (max-width: 320px) {
+            font-size: 1rem;
+            margin: 0px;
+        }
 
         &::before {
             content: "";
@@ -104,7 +136,7 @@
             background: url(../assets/img/Demo-Icon.svg) center center no-repeat;
             position: relative;
             top: 5px;
-            left:0;
+            left: 0;
         }
 
         &--code::before {
@@ -116,22 +148,33 @@
             background: url(../assets/img/Code-Icon.svg) center center no-repeat;
         }
     }
+
     &__link {
         text-decoration: none;
         margin-left: 50px;
         position: relative;
-        & + & {
+
+        @media (max-width: 360px) {
+            margin-right: 10px;
+            margin-left: 42px;
+        }
+
+        @media (max-width: 320px) {
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+
+        &+& {
             &::after {
-            content: "";
-            display:block;
-            position: absolute;
-            top: -5px;
-            left: -24px;
-            width: 2px;
-            height: 32px;
-            background: lightgray;
+                content: "";
+                display: block;
+                position: absolute;
+                top: -5px;
+                left: -24px;
+                width: 2px;
+                height: 32px;
+                background: lightgray;
             }
         }
     }
 }
-
