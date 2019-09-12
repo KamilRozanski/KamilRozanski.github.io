@@ -312,9 +312,9 @@ template {
   max-width: 781px;
   margin: 0 auto;
   padding-left: 8rem; }
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     .hero {
-      padding-left: 0; } }
+      padding-left: 1rem; } }
   .hero__foto {
     max-width: 120px;
     max-height: 120px; }
@@ -356,7 +356,7 @@ template {
   margin: 0 auto;
   margin: 12.5rem 0;
   padding-left: 8rem; }
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     .my-skills {
       padding-left: 0;
       margin-top: 7.5rem;
@@ -459,7 +459,7 @@ template {
 .my-projects {
   background-color: #F5F7FA;
   padding: 0 8rem; }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     .my-projects {
       padding: 16px; } }
 
@@ -471,10 +471,13 @@ template {
     .projects-header {
       padding-top: 5rem;
       text-align: center;
-      font-size: 1,5rem; } }
+      font-size: 1, 5rem; } }
   .projects-header__title {
     font-weight: 600;
     font-size: 36px; }
+  @media (max-width: 1024px) {
+    .projects-header {
+      font-size: 1.5rem; } }
   .projects-header__description {
     font-weight: 300;
     font-size: 20px;
@@ -483,6 +486,9 @@ template {
     @media (max-width: 640px) {
       .projects-header__description {
         font-size: 1rem; } }
+    @media (max-width: 1024px) {
+      .projects-header__description {
+        font-size: 1.5rem; } }
 
 .projects-list-wrapper {
   max-width: 1184px;
@@ -500,6 +506,11 @@ template {
   list-style-type: none;
   margin: 0 auto;
   padding-left: 0; }
+  @media (min-width: 667px) and (orientation: landscape) {
+    .project-list {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      padding: 1rem; } }
   .project-list__title {
     color: #171F3F;
     font-size: 1.25rem; }
@@ -522,6 +533,10 @@ template {
 
 .project-list-wrapper {
   padding: 3rem; }
+  @media (max-width: 640px) {
+    .project-list-wrapper {
+      padding: 1rem;
+      text-align: center; } }
 
 .project-footer {
   background: #F5F7FA;
@@ -533,12 +548,19 @@ template {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 1rem 3rem 1rem 0; }
+  @media (max-width: 320px) {
+    .project-footer {
+      padding: 8px 0; } }
   .project-footer__span {
     text-decoration: none;
     color: #0593FB;
     font-size: 1.12rem;
     line-height: 2rem;
     font-weight: 500; }
+    @media (max-width: 320px) {
+      .project-footer__span {
+        font-size: 1rem;
+        margin: 0px; } }
     .project-footer__span::before {
       content: "";
       display: inline-block;
@@ -560,6 +582,14 @@ template {
     text-decoration: none;
     margin-left: 50px;
     position: relative; }
+    @media (max-width: 360px) {
+      .project-footer__link {
+        margin-right: 10px;
+        margin-left: 42px; } }
+    @media (max-width: 320px) {
+      .project-footer__link {
+        margin-right: 25px;
+        margin-left: 25px; } }
     .project-footer__link + .project-footer__link::after {
       content: "";
       display: block;
