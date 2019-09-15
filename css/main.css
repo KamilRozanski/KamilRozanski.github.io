@@ -512,7 +512,7 @@ template {
   padding-left: 0px; }
   @media (max-width: 768px) {
     .project-list {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } }
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); } }
   .project-list__title {
     color: #171F3F;
     font-size: 1.25rem; }
