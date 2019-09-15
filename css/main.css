@@ -371,7 +371,6 @@ template {
     font-size: 2.25rem;
     border-bottom: 2px solid lightgray;
     padding-bottom: 1rem;
-    margin: 0 0 1rem 1rem;
     font-weight: 600; }
     @media (max-width: 768px) {
       .my-skills__title {
@@ -509,7 +508,7 @@ template {
     padding-left: 0px; }
     @media (max-width: 768px) {
       .my-projects .project-list {
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); } }
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } }
     .my-projects .project-list__title {
       color: #171F3F;
       font-size: 1.25rem; }
@@ -563,23 +562,19 @@ template {
       text-decoration: none;
       margin-left: 3.125rem;
       position: relative; }
-      @media (max-width: 360px) {
-        .my-projects .project-footer__link {
-          margin-right: 10px;
-          margin-left: 42px; } }
-      @media (max-width: 320px) {
-        .my-projects .project-footer__link {
-          margin-right: 25px;
-          margin-left: 25px; } }
       .my-projects .project-footer__link + .my-projects .project-footer__link::after {
-        content: "";
+        content: "dupa";
         display: block;
         position: absolute;
         top: -5px;
         left: -24px;
         width: 2px;
         height: 32px;
-        background: lightgray; }
+        background: red; }
+      @media (max-width: 768px) {
+        .my-projects .project-footer__link {
+          margin-right: 10px;
+          margin-left: 42px; } }
 
 .contact {
   background-color: #171F3F;
@@ -630,7 +625,7 @@ template {
     margin-top: 0.5rem;
     background: #0593FB;
     border-radius: 2.56rem; }
-    @media (max-width: 414px) {
+    @media (max-width: 768px) {
       .contact-email::after {
         max-width: 165px; } }
 
@@ -639,9 +634,9 @@ html {
           box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 16px; }
-  @media (max-width: 414px) {
+  @media (max-width: 768px) {
     html {
-      font-size: 12px; } }
+      font-size: 13px; } }
 
 *,
 *:before,
