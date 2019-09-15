@@ -7,151 +7,157 @@
         padding: 0 1rem;
         margin-top: 7.5rem;
     }
+}
+
+.project-list-wrapper {
+    padding: 1rem;
+    min-width: 580px;
+
+    @media (max-width: 768px) {
+        padding: 1rem;
+        text-align: left;
+        min-width: auto;
+    }
+}
 
 
-    .project-list-wrapper {
-        padding: 3rem;
-        min-width: 580px;
+.project-header {
+    max-width: 580px;
+    padding-top: 8.73rem;
+    padding-bottom: 4rem;
 
-        @media (max-width: 768px) {
-            padding: 1rem;
-            text-align: center;
-            min-width: auto;
-        }
+    @media (max-width: 768px) {
+        padding-top: 5rem;
+        text-align: center;
+        font-size: 1, 5rem;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 2.25rem;
     }
 
 
-    .project-header {
+    &__description {
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        color: $shuttle-gray;
+    }
+}
+
+
+.projects-list-wrapper {
+    max-width: 1184px;
+    padding-bottom: 8rem;
+    display: flex;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    &__title {
+        color: $big-stone;
+        font-size: 1.25rem;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 1.12rem;
+        line-height: 2rem;
+    }
+
+    &__item {
         max-width: 580px;
-        padding-top: 8.73rem;
-        padding-bottom: 4rem;
-
-        @media (max-width: 768px) {
-            padding-top: 5rem;
-            text-align: center;
-            font-size: 1, 5rem;
-        }
-
-        &__title {
-            font-weight: 600;
-            font-size: 2.25rem;
-        }
-
-
-        &__description {
-            font-weight: 300;
-            font-size: 1.25rem;
-            line-height: 2.25rem;
-            color: $shuttle-gray;
-        }
+        background: $white;
+        box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+        border-radius: 0.5rem;
+        overflow: hidden;
     }
 
+}
 
-    .projects-list-wrapper {
-        max-width: 1184px;
-        padding-bottom: 8rem;
-        display: flex;
+
+
+
+
+.project-footer {
+    background: $catskill-white;
+    max-height: 64px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+
+    @media (max-width: 768px) {
+        margin: 0;
+        justify-content: center;
     }
 
-    .project-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 24px;
-        row-gap: 24px;
-        list-style-type: none;
-        margin: 0 auto;
-        padding-left: 0px;
-
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        }
-
-        &__title {
-            color: $big-stone;
-            font-size: 1.25rem;
-        }
-
-        &__description {
-            font-weight: 300;
-            font-size: 1.12rem;
-            line-height: 2rem;
-        }
-
-        &__item {
-            max-width: 580px;
-            background: $white;
-            box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-            border-radius: 0.5rem;
-            overflow: hidden;
-        }
-
-    }
-
-
-
-
-
-    .project-footer {
-        background: $catskill-white;
-        max-height: 64px;
-        display: flex;
-        justify-content: flex-end;
-        padding: 1rem 3rem 1rem 0;
+    &__span {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 1.12rem;
+        line-height: 2rem;
+        font-weight: 500;
 
         @media (max-width: 320px) {
-            padding: 0.5rem 0;
+            font-size: 1rem;
+            margin: 0px;
         }
 
-        &__span {
-            text-decoration: none;
-            color: $text-color;
-            font-size: 1.12rem;
-            line-height: 2rem;
-            font-weight: 500;
-
-            @media (max-width: 320px) {
-                font-size: 1rem;
-                margin: 0px;
-            }
-
-            &::before {
-                content: "";
-                display: inline-block;
-                margin-right: 8px;
-                width: 24px;
-                height: 24px;
-                background: url(../assets/img/Demo-Icon.svg) center center no-repeat;
-                position: relative;
-                top: 5px;
-                left: 0;
-            }
-
-            &--code::before {
-                background: url(../assets/img/Code-Icon.svg) center center no-repeat;
-            }
-        }
-
-        &__link {
-            text-decoration: none;
-            margin-left: 3.125rem;
+        &::before {
+            content: "";
+            display: inline-block;
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+            background: url(../assets/img/Demo-Icon.svg) center center no-repeat;
             position: relative;
-            & + & {
-                &::after {
-                    content: "dupa";
-                    display: block;
-                    position: absolute;
-                    top: -5px;
-                    left: -24px;
-                    width: 2px;
-                    height: 32px;
-                    background: red;
+            top: 5px;
+            left: 0;
+        }
+
+        &--code::before {
+            background: url(../assets/img/Code-Icon.svg) center center no-repeat;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        margin-left: 3.125rem;
+        position: relative;
+
+        &+& {
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -0.37rem;
+                left: -1.62rem;
+                width: 2px;
+                height: 32px;
+                background: lightgray;
+
+                @media (max-width: 768px) {
+                    top: -0.67rem;
+                    left: -2rem;
                 }
             }
+        }
 
-            @media (max-width: 768px) {
-                margin-right: 10px;
-                margin-left: 42px;
-            }
+        @media (max-width: 768px) {
+            margin-right: 1.62rem;
+            margin-left: 2.62rem;
         }
     }
 }
