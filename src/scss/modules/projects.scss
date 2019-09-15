@@ -63,7 +63,7 @@
         padding-left: 0px;
 
         @media (max-width: 768px) {
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         }
 
         &__title {
@@ -135,28 +135,22 @@
             text-decoration: none;
             margin-left: 3.125rem;
             position: relative;
-
-            @media (max-width: 360px) {
-                margin-right: 10px;
-                margin-left: 42px;
-            }
-
-            @media (max-width: 320px) {
-                margin-right: 25px;
-                margin-left: 25px;
-            }
-
-            &+& {
+            & + & {
                 &::after {
-                    content: "";
+                    content: "dupa";
                     display: block;
                     position: absolute;
                     top: -5px;
                     left: -24px;
                     width: 2px;
                     height: 32px;
-                    background: lightgray;
+                    background: red;
                 }
+            }
+
+            @media (max-width: 768px) {
+                margin-right: 10px;
+                margin-left: 42px;
             }
         }
     }
