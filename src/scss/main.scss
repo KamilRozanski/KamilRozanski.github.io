@@ -13,6 +13,10 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 16px;
+
+  @media (max-width: 414px) {
+    font-size: 12px;
+  }
 }
 
 *,
@@ -24,6 +28,10 @@ html {
 body {
   font-family: Poppins, sans-serif;
   border: 6px solid $big-stone;
+
+  @media (max-width: 414px) {
+    border: none;
+  }
 }
 
 .main {
@@ -33,6 +41,6 @@ body {
 
 .wrapper {
   max-width: 1444px;
+  padding-top: 8rem;
   margin: 0 auto;
-  padding: 7rem 1rem 0rem;
 }

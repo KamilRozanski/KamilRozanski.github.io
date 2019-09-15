@@ -1,29 +1,32 @@
 .contact {
-background-color: #171F3F;
-color: $white;
-height: 563px;
-padding-top: 8rem;
-padding-left: 8rem;
+    background-color: #171F3F;
+    color: $white;
+    height: 563px;
+    padding-top: 8rem;
+    padding-left: 8rem;
 
-@media (max-width: 640px) {
-    padding-left: 1rem;
-}
-&__title {
-    font-size: 2.25rem; 
-    &::before {
-        content: "";
-        display: block;
-        width: 80px;
-        height: 4px;
-        background: #0593FB;
-        border-radius: 0.5rem;
-        margin-bottom: 1.5rem;
+    @media (max-width: 1024px) {
+        padding: 7.5rem 1rem;
     }
-}
-&__description {
+
+    &__title {
+        font-size: 2.25rem;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #0593FB;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__description {
         font-weight: 300;
         font-size: 1.25rem;
-        line-height: 36px;
+        line-height: 2.25rem;
     }
 }
 
@@ -37,30 +40,37 @@ padding-left: 8rem;
     margin-bottom: 1.25rem;
     max-width: 144px;
     max-height: 32px;
-    
+
     &__item {
         display: inline-block;
-        }
+    }
+
     &__icon {
-        padding: 16px;
+        padding: 1rem;
     }
 }
 
 .contact-email {
     margin-top: 3rem;
+
     &__link {
         color: $text-color;
         text-decoration: none;
         font-size: 1.25rem;
-        
+
     }
+
     &::after {
-            content: "";
-            display: block;
-            width: 220px;
-            height: 2px;
-            margin-top: 0.5rem;
-            background: $text-color;
-            border-radius: 2.56rem;
+        content: "";
+        display: block;
+        max-width: 220px;
+        height: 2px;
+        margin-top: 0.5rem;
+        background: $text-color;
+        border-radius: 2.56rem;
+
+        @media (max-width: 414px) {
+            max-width: 165px;
         }
+    }
 }

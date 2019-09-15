@@ -1,54 +1,64 @@
 .hero {
-    max-width: 781px;
-    margin: 0 auto;
-    padding-left: 8rem;
-    @media (max-width: 1024px) {
-      padding-left: 1rem;
+  max-width: 781px;
+  margin: 0 auto;
+  padding-left: 8rem;
+
+  @media (max-width: 1024px) {
+    padding: 1rem;
+  }
+
+  &__img {
+    max-width: 120px;
+    max-height: 120px;
+
+    @media (max-width: 768px) {
+      max-width: 80px;
+      max-height: 80px;
     }
-  
-    &__foto {
-      max-width: 120px;
-      max-height: 120px;
-    }
+  }
+
 }
-  
-  
-  .about-me {
-    &__name {
-      padding: 2rem 0 1rem;
-      font-weight: 600;
-      font-size: 2.5rem;
-      line-height: 3.5rem;
-      @media (max-width: 375px) {
-        font-size: 1.85rem; 
-      }
-    }
 
-    &__info {
-      color: $shuttle-gray;
-        font-weight: 300;
-        font-size: 1.25rem;
-        @media (max-width: 375px) {
-          font-size: 0.87rem; 
-        }
-      }
-    
-      &__email {
-        padding-top: 3.75rem;
-        font-size: 1.25rem;
-        @media (max-width: 375px) {
-          font-size: 1rem;
-        }
-      }
-    }
 
-    .about-me__links {
-      color: #0593FB;
-    }
+.about-me {
+  &__name {
+    padding: 2rem 0 2rem;
+    font-weight: 600;
+    margin: 0px;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
 
-    .about-me__links--contact {
-      border-bottom: 2px solid #0593FB;
-      text-decoration: none;
-      padding-bottom: 0.5rem;
+    @media (max-width: 375px) {
+      font-size: 1.85rem;
     }
-    
+  }
+
+  &__info {
+    color: $shuttle-gray;
+    font-weight: 300;
+    font-size: 1.25rem;
+
+    @media (max-width: 375px) {
+      font-size: 0.87rem;
+    }
+  }
+
+  &__email {
+    padding-top: 3.75rem;
+    font-size: 1.25rem;
+
+    @media (max-width: 375px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.about-me__links {
+  color: #0593FB;
+}
+
+.about-me__links--contact {
+  border-bottom: 2px solid #0593FB;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}

@@ -1,179 +1,162 @@
 .my-projects {
     background-color: $catskill-white;
-    padding: 0 8rem;
-
-    @media (max-width: 768px) {
-        padding: 16px;
-    }
-
-}
-
-
-.projects-header {
-    max-width: 580px;
-    padding-top: 8.73rem;
-    padding-bottom: 4rem;
-
-    @media (max-width: 640px) {
-        padding-top: 5rem;
-        text-align: center;
-        font-size: 1, 5rem;
-    }
-
-
-    &__title {
-        font-weight: 600;
-        font-size: 36px;
-    }
+    padding-top: 8rem;
+    padding-left: 8rem;
 
     @media (max-width: 1024px) {
-        font-size: 1.5rem;
+        padding: 0 1rem;
+        margin-top: 7.5rem;
     }
 
-    &__description {
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 2.25rem;
-        color: $shuttle-gray;
 
-        @media (max-width: 640px) {
-            font-size: 1rem;
-        }
+    .project-list-wrapper {
+        padding: 3rem;
+        min-width: 580px;
 
-        @media (max-width: 1024px) {
-            font-size: 1.5rem;
+        @media (max-width: 768px) {
+            padding: 1rem;
+            text-align: center;
+            min-width: auto;
         }
     }
-}
 
 
-.projects-list-wrapper {
-    max-width: 1184px;
-    padding-bottom: 8rem;
-}
-
-.project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-    row-gap: 24px;
-    list-style-type: none;
-    margin: 0 auto;
-    padding-left: 0;
-
-    @media (min-width: 667px) and (orientation: landscape) {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-    
-
-
-    &__title {
-        color: $big-stone;
-        font-size: 1.25rem;
-    }
-
-    &__description {
-        font-weight: 300;
-        font-size: 1.12rem;
-        line-height: 2rem;
-    }
-
-    &__item {
+    .project-header {
         max-width: 580px;
-        background: $white;
-        box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-        border-radius: 0.5rem;
-        overflow: hidden;
+        padding-top: 8.73rem;
+        padding-bottom: 4rem;
+
+        @media (max-width: 768px) {
+            padding-top: 5rem;
+            text-align: center;
+            font-size: 1, 5rem;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 2.25rem;
+        }
+
+
+        &__description {
+            font-weight: 300;
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            color: $shuttle-gray;
+        }
     }
 
-    @media (max-width: 640px) {
-        grid-template-columns: 1fr;
-        margin: 0;
-    }
-}
 
-.project-list-wrapper {
-    padding: 3rem;
-
-    @media (max-width: 640px) {
-        padding: 1rem;
-        text-align: center;
-    }
-}
-
-
-
-.project-footer {
-    background: $catskill-white;
-    max-height: 64px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem 3rem 1rem 0;
-
-    @media (max-width: 320px) {
-        padding: 8px 0;
+    .projects-list-wrapper {
+        max-width: 1184px;
+        padding-bottom: 8rem;
+        display: flex;
     }
 
-    &__span {
-        text-decoration: none;
-        color: $text-color;
-        font-size: 1.12rem;
-        line-height: 2rem;
-        font-weight: 500;
+    .project-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 24px;
+        row-gap: 24px;
+        list-style-type: none;
+        margin: 0 auto;
+        padding-left: 0px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        }
+
+        &__title {
+            color: $big-stone;
+            font-size: 1.25rem;
+        }
+
+        &__description {
+            font-weight: 300;
+            font-size: 1.12rem;
+            line-height: 2rem;
+        }
+
+        &__item {
+            max-width: 580px;
+            background: $white;
+            box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+    }
+
+
+
+
+
+    .project-footer {
+        background: $catskill-white;
+        max-height: 64px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 3rem 1rem 0;
 
         @media (max-width: 320px) {
-            font-size: 1rem;
-            margin: 0px;
+            padding: 0.5rem 0;
         }
 
-        &::before {
-            content: "";
-            display: inline-block;
-            margin-right: 8px;
-            width: 24px;
-            height: 24px;
-            background: url(../assets/img/Demo-Icon.svg) center center no-repeat;
-            position: relative;
-            top: 5px;
-            left: 0;
-        }
+        &__span {
+            text-decoration: none;
+            color: $text-color;
+            font-size: 1.12rem;
+            line-height: 2rem;
+            font-weight: 500;
 
-        &--code::before {
-            content: "";
-            display: inline-block;
-            margin-right: 8px;
-            width: 24px;
-            height: 24px;
-            background: url(../assets/img/Code-Icon.svg) center center no-repeat;
-        }
-    }
+            @media (max-width: 320px) {
+                font-size: 1rem;
+                margin: 0px;
+            }
 
-    &__link {
-        text-decoration: none;
-        margin-left: 50px;
-        position: relative;
-
-        @media (max-width: 360px) {
-            margin-right: 10px;
-            margin-left: 42px;
-        }
-
-        @media (max-width: 320px) {
-            margin-right: 25px;
-            margin-left: 25px;
-        }
-
-        &+& {
-            &::after {
+            &::before {
                 content: "";
-                display: block;
-                position: absolute;
-                top: -5px;
-                left: -24px;
-                width: 2px;
-                height: 32px;
-                background: lightgray;
+                display: inline-block;
+                margin-right: 8px;
+                width: 24px;
+                height: 24px;
+                background: url(../assets/img/Demo-Icon.svg) center center no-repeat;
+                position: relative;
+                top: 5px;
+                left: 0;
+            }
+
+            &--code::before {
+                background: url(../assets/img/Code-Icon.svg) center center no-repeat;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            margin-left: 3.125rem;
+            position: relative;
+
+            @media (max-width: 360px) {
+                margin-right: 10px;
+                margin-left: 42px;
+            }
+
+            @media (max-width: 320px) {
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+
+            &+& {
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: -5px;
+                    left: -24px;
+                    width: 2px;
+                    height: 32px;
+                    background: lightgray;
+                }
             }
         }
     }
