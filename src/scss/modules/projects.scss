@@ -1,14 +1,16 @@
 .my-projects {
     background-color: $catskill-white;
-    padding-top: 8rem;
-    padding-left: 8rem;
+    padding-left: 1rem;
 
     @media (max-width: 1024px) {
         padding: 0 1rem;
         margin-top: 7.5rem;
     }
 }
-
+.my-projects-wrapper {
+    max-width: 1187px;
+    margin: 0 auto;
+}
 .project-list-wrapper {
     padding: 1rem;
     min-width: 580px;
@@ -26,12 +28,14 @@
     padding-top: 8.73rem;
     padding-bottom: 4rem;
 
+
     @media (max-width: 768px) {
         padding-top: 5rem;
+        margin: 0 auto;
         text-align: center;
         font-size: 1, 5rem;
     }
-
+   
     &__title {
         font-weight: 600;
         font-size: 2.25rem;
@@ -50,7 +54,8 @@
 .projects-list-wrapper {
     max-width: 1184px;
     padding-bottom: 8rem;
-    display: flex;
+    margin: 0 auto;
+
 }
 
 .project-list {
@@ -63,7 +68,7 @@
     padding-left: 0px;
 
     @media (max-width: 768px) {
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     }
 
     &__title {
@@ -96,11 +101,10 @@
     max-height: 64px;
     display: flex;
     justify-content: flex-end;
-    padding: 1rem;
+    padding: 1rem 0;
 
     @media (max-width: 768px) {
         margin: 0;
-        justify-content: center;
     }
 
     &__span {
@@ -109,6 +113,7 @@
         font-size: 1.12rem;
         line-height: 2rem;
         font-weight: 500;
+        margin-right: 2rem;
 
         @media (max-width: 320px) {
             font-size: 1rem;
@@ -143,15 +148,11 @@
                 display: block;
                 position: absolute;
                 top: -0.37rem;
-                left: -1.62rem;
+                left: -2.62rem;
                 width: 2px;
                 height: 32px;
                 background: lightgray;
 
-                @media (max-width: 768px) {
-                    top: -0.67rem;
-                    left: -2rem;
-                }
             }
         }
 

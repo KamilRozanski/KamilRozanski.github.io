@@ -40,13 +40,20 @@
     margin-bottom: 1.25rem;
     max-width: 144px;
     max-height: 32px;
+    display: flex;
+    flex-direction: flex-start;
 
     &__item {
         display: inline-block;
+
     }
 
     &__icon {
         padding: 1rem;
+        max-width: 58px;
+        max-height: 58px;
+
+
     }
 }
 

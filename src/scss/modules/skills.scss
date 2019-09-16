@@ -1,7 +1,7 @@
 .my-skills {
     max-width: 1187px;
     margin: 0 auto;
-    margin: 12.5rem 0;
+    margin: 12.5rem 0 8.73rem;
     padding-left: 8rem;
 
     @media (max-width: 768px) {
@@ -32,6 +32,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     padding: 0 1rem;
+    padding-left: 0;
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+    }
 
     &__title {
         font-size: 2rem;
@@ -65,12 +69,11 @@
     column-gap: 1.5rem;
     list-style-type: none;
     padding-left: 0;
-    margin: 0;
     min-height: 40px;
-    margin: 1rem;
+    margin: 3rem 2rem;
 
     @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     }
 }
 
@@ -80,8 +83,6 @@
 .to-learn__item {
     min-height: 50px;
     position: relative;
-    top: 50px;
-    left: 20px;
     color: $shuttle-gray;
 }
 
