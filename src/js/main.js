@@ -43,7 +43,7 @@ fetch('https://api.github.com/users/KamilRozanski/repos?sort=updated')
         <img class="project-list__logo" src="assets/img/Github-Icon.png" alt="github-logo">
         <h4 class="project-list__title">${name}</h4>
         ${
-          description ? `<p class="project-list__description">${description}</p>` : "no description 😕"
+          description ? `<p class="project-list__description">${description}</p>` : `<p class="project-list__description">No despciption 😞</p>`
           
         }
       </div>
@@ -52,19 +52,19 @@ fetch('https://api.github.com/users/KamilRozanski/repos?sort=updated')
       
 
         <div class="project-footer-wrapper">
-        <a class="project-footer__link "href="${homepage}" title="Demo" target="_blank" rel="notfollow noreferrer"> <span class="project-footer__span">Demo</span> </a>
-
+        ${
+          homepage ? `<a class="project-footer__link "href="${homepage}" title="Demo" target="_blank" rel="notfollow noreferrer"> <span class="project-footer__span">Demo</span> </a>` : ''
+        }
+        
         <a class="project-footer__link "href="${html_url}" title="Github link" target="_blank" rel="notfollow noreferrer"><span class="project-footer__span project-footer__span--code">Github</span> </a>
       </div>
       </section>
       
     </li>
-
-    
     `;
-    console.log (list.innerHTML)
+
     }
-    
+
 
   })
 
