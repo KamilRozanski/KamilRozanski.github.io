@@ -148,13 +148,14 @@
                 width: 2px;
                 height: 32px;
                 background: lightgray;
-
+                
+                @media (max-width: 768px) {
+                    top: -0.75rem;
+                    left: -2.62rem;
+                }
             }
         }
 
-        @media (max-width: 768px) {
-            margin-right: 1.62rem;
-            margin-left: 2.62rem;
-        }
+       
     }
 }
