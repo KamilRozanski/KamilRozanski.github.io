@@ -582,10 +582,10 @@ template {
       width: 2px;
       height: 32px;
       background: lightgray; }
-    @media (max-width: 768px) {
-      .project-footer__link {
-        margin-right: 1.62rem;
-        margin-left: 2.62rem; } }
+      @media (max-width: 768px) {
+        .project-footer__link + .project-footer__link::after {
+          top: -0.75rem;
+          left: -2.62rem; } }
 
 .contact {
   background-color: #171F3F;
