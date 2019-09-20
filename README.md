@@ -14,5 +14,5 @@
 - Figma (https://www.figma.com)💥 
 - Gulp/NPM 💥
 
-Programing is my passions, and every day I learning new skills.
+Programing is my passions, and every day I lear new skills.
 New projects will be updated automatically on this page so it is worth to look here 😉
