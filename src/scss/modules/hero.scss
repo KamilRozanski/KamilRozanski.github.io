@@ -54,11 +54,11 @@
 }
 
 .about-me__links {
-  color: #0593FB;
+  color: $text-color
 }
 
 .about-me__links--contact {
-  border-bottom: 2px solid #0593FB;
+  border-bottom: 2px solid $text-color;
   text-decoration: none;
   padding-bottom: 0.5rem;
 }
