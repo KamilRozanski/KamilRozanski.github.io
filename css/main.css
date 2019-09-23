@@ -471,8 +471,7 @@ template {
   margin: 0 auto; }
 
 .project-list-wrapper {
-  padding: 1rem;
-  min-width: 580px; }
+  padding: 1rem; }
   @media (max-width: 768px) {
     .project-list-wrapper {
       padding: 1rem;
@@ -524,9 +523,9 @@ template {
   .project-list__description {
     font-weight: 300;
     font-size: 1.12rem;
-    line-height: 2rem; }
+    line-height: 2rem;
+    min-height: 65px; }
   .project-list__item {
-    max-width: 580px;
     background: #fff;
     -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
             box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
@@ -556,7 +555,7 @@ template {
     @media (max-width: 320px) {
       .project-footer__span {
         font-size: 1rem;
-        margin: 0px; } }
+        margin: .5rem; } }
     .project-footer__span::before {
       content: "";
       display: inline-block;
@@ -586,6 +585,10 @@ template {
         .project-footer__link + .project-footer__link::after {
           top: -0.75rem;
           left: -2.62rem; } }
+      @media (max-width: 320px) {
+        .project-footer__link + .project-footer__link::after {
+          top: -0.75rem;
+          left: -2rem; } }
 
 .contact {
   background-color: #171F3F;
