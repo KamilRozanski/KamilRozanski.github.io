@@ -13,7 +13,6 @@
 }
 .project-list-wrapper {
     padding: 1rem;
-    min-width: 580px;
 
     @media (max-width: 768px) {
         padding: 1rem;
@@ -55,7 +54,6 @@
     max-width: 1184px;
     padding-bottom: 8rem;
     margin: 0 auto;
-
 }
 
 .project-list {
@@ -80,10 +78,10 @@
         font-weight: 300;
         font-size: 1.12rem;
         line-height: 2rem;
+        min-height: 65px;
     }
 
     &__item {
-        max-width: 580px;
         background: $white;
         box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
         border-radius: 0.5rem;
@@ -113,7 +111,7 @@
 
         @media (max-width: 320px) {
             font-size: 1rem;
-            margin: 0px;
+            margin: .5rem;
         }
 
         &::before {
@@ -152,6 +150,10 @@
                 @media (max-width: 768px) {
                     top: -0.75rem;
                     left: -2.62rem;
+                }
+                @media (max-width: 320px) {
+                    top: -0.75rem;
+                    left: -2rem;
                 }
             }
         }
